@@ -54,9 +54,9 @@ fields:
         maxCount: 0
       - id: 245$c.pattern
         description: no more 'et al' but 'and X others'.
-        - not:
+        not:
           - pattern: ^.*\b(et al|et. al)\.?\s*$
-             debug: false
+            debug: false
   - name: 245n
     path: 245$n
     rules:
